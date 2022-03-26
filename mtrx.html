@@ -11,35 +11,15 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
     <style>
         body {
-            background-color: #000600;
-        }
-
-        .cover {
-            align-content: center;
-            text-align: center;
-            margin-top: 200px;
-        }
-
-        .big_logo {
-            margin-bottom: 20px;
-        }
-
-        .text {
-            font-family: monospace;
-            font-size: large;
-            color: #29af4a;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
         }
     </style>
 </head>
 
 <body>
-    <div class="cover">
-        <div class="big_logo">
-            <a href="mtrx.html"><img src="images/cover.png" alt="Metacortex"></a>
-        </div>
-        <div class="text">
-            Opening date: 24.04.2022
-        </div>
-    </div>
+    <canvas id="canv" width="500" height="200"></canvas>
+    <script src="js/matrix.js"></script>
 </body>
 </html>
