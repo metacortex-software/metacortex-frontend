@@ -5,46 +5,11 @@
     <meta charset="UTF-8">
     <title>-X-</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="alternate icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-    <style>
-        body {
-            /*background-color: #000600;*/
-            /*background-color: #313131;*/
-            background-color: #100F0D;
-        }
-
-        .cover {
-            align-content: center;
-            text-align: center;
-            margin-top: 200px;
-        }
-
-        .big_logo {
-            margin-bottom: 20px;
-        }
-
-        .text {
-            font-family: monospace;
-            font-size: large;
-            color: #00FB54;
-            /*color: #29af4a;*/
-        }
-        ._text {
-            font-family: Courier New, monospace;
-            text-shadow: 0 0 3px #fff, 0px 0px 15px #00ff00, 0px 0px 9px #56b000, 0px 0px 15px #006400, 0px 0px 5px #006400;
-            color: #FFFFFF;
-        }
-
-        @media only screen and (max-width: 500px) {
-            .main_logo_responsive {
-                max-width: 320px;
-            }
-        }
-
-    </style>
 </head>
 
 <body>
@@ -52,9 +17,10 @@
     <div class="big_logo">
         <img src="images/logo.png" alt="METACORTEX" class="main_logo_responsive">
     </div>
-    <div class="_text">
-        coming soon ...
+    <div class="loader_box">
+        <p class="loader_text">Loading<span class="dots_loading">...</span></p>
     </div>
 </div>
+<script src="js/loader.js"></script>
 </body>
 </html>

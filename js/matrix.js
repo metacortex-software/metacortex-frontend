@@ -9,7 +9,7 @@ const ypos = Array(cols).fill(0);
 ctx.fillStyle = '#000';
 ctx.fillRect(0, 0, w, h);
 
-function matrix () {
+function matrix() {
     ctx.fillStyle = '#0001';
     ctx.fillRect(0, 0, w, h);
 
@@ -17,7 +17,7 @@ function matrix () {
     ctx.font = '14pt monospace';
 
     ypos.forEach((y, ind) => {
-        const text = String.fromCharCode(3e4+Math.random()*33);
+        const text = String.fromCharCode(3e4 + Math.random() * 33);
         const x = ind * 20;
         ctx.fillText(text, x, y);
         if (y > 100 + Math.random() * 10000) ypos[ind] = 0;

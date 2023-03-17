@@ -1,0 +1,52 @@
+body {
+    background-color: #000600;
+    background-color: #313131;
+    background-color: #100F0D;
+}
+
+/*стилі блоку Loading*/
+span {
+    opacity: 0;
+    transition: all 0.6 ease;
+    display: inline-block;
+}
+span.enterX {
+    opacity: 1;
+    color: #29af4a;
+}
+span.dots_loading{
+    opacity: 1;
+    color: #29af4a;
+}
+
+.loader_text {
+    font-family: monospace;
+    font-size: large;
+    letter-spacing: 2px;
+    color: #29af4a;
+}
+
+
+/* інше */
+
+.cover {
+    align-content: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.big_logo {
+    margin-bottom: 20px;
+}
+
+._text {
+    font-family: Courier New, monospace;
+    text-shadow: 0 0 3px #fff, 0px 0px 15px #00ff00, 0px 0px 9px #56b000, 0px 0px 15px #006400, 0px 0px 5px #006400;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 500px) {
+    .main_logo_responsive {
+        max-width: 320px;
+    }
+}
