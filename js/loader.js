@@ -21,4 +21,9 @@ function onTick() {
 function complete() {
     clearInterval(timer); 
     timer = null;
+    setTimeout(function() {
+        text.innerHTML = '<a href="https://github.com/metacortex-software"><button class="loader_button">Enter The Matrix</button></a>';
+    }, 2000);
 }
+
+
