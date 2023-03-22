@@ -1,27 +1,19 @@
-const text = document.querySelector('._text'); 
-const stringText = text.textContent; 
-const splitText = stringText.split(''); 
-text.textContent = ''; 
-for (let i = 0; i < splitText.length; i++) {
-    text.innerHTML += '<span>' + splitText[i] + '</span>'; 
-}
-let letter = 0; 
-let timer = setInterval(onTick, 100);
+const progress = "..........";
 
-function onTick() {
-    const span = text.querySelectorAll('span')[letter];
-    span.classList.add('enterX');
-    letter++
-    if (letter === splitText.length) {
-        complete();
-        return;
+let index = 0;
+const loader = document.getElementById("loader");
+const output = document.getElementById("output");
+const enterButton = document.getElementById("enterButton");
+
+const timerId = setInterval(() => {
+    output.innerHTML += progress[index];
+    index++;
+    if (index === progress.length) {
+        clearInterval(timerId);
+        setTimeout(function() {
+            enterButton.style.display = 'inline';
+            loader.style.display = 'none';
+
+        }, 2000);
     }
-}
-
-function complete() {
-    clearInterval(timer); 
-    timer = null;
-    setTimeout(function() {
-        text.innerHTML = '<a href="/mtrx.html"><button class="loader_button">Enter The Matrix</button></a>';
-    }, 2000);
-}
+}, 500);
