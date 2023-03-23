@@ -1,9 +1,9 @@
-const progress = "..........";
-
-let index = 0;
+const progress = "................................";
 const loader = document.getElementById("loader");
 const output = document.getElementById("output");
 const enterButton = document.getElementById("enterButton");
+
+let index = 0;
 
 const timerId = setInterval(() => {
     output.innerHTML += progress[index];
