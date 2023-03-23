@@ -8,6 +8,16 @@ $ cd metacortex-frontend
 $ git checkout -b your_branch_name
 ```
 
+### How to start a new feature
+
+You in a working directory 
+
+```bash
+$ git checkout main
+$ git pull 
+$ git checkout your_branch_name
+```
+
 ... do you task
 
 When you are finished:
