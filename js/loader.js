@@ -22,7 +22,7 @@ function complete() {
     clearInterval(timer); 
     timer = null;
     setTimeout(function() {
-        text.innerHTML = '<a href="../mtrx.html"><button class="loader_button">Enter The Matrix</button></a>';
+        text.innerHTML = '<a href="./mtrx.html"><button class="loader_button">Enter The Matrix</button></a>';
     }, 2000);
 }
 
