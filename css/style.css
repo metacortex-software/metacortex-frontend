@@ -72,7 +72,6 @@ margin: 0px;
     margin-left: auto;
     margin: auto;
     width: 1440px;
-    outline: 2px solid goldenrod;
 }
 
 
@@ -125,7 +124,6 @@ margin: 0px;
     color: white;
     margin: 0px;
     margin-bottom: 10px;
-    text-shadow: 0 0 2px #fff, 0px 0px 14px #00ff00, 0px 0px 8px #56b000, 0px 0px 14px #006400, 0px 0px 4px #006400;
 }
 .project_text-block {
     height: auto;
