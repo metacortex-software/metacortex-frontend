@@ -9,75 +9,117 @@
     <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-    <style>
-        body {
-            /*background-color: #000600;*/
-            /*background-color: #313131;*/
-            background-color: #100F0D;
-        }
-
-        .cover {
-            align-content: center;
-            text-align: center;
-            margin-top: 200px;
-        }
-
-        .big_logo {
-            margin-bottom: 20px;
-        }
-
-        .text {
-            font-family: monospace;
-            font-size: large;
-            color: #00FB54;
-            /*color: #29af4a;*/
-        }
-        ._text {
-            font-family: Courier New, monospace;
-            text-shadow: 0 0 3px #fff, 0px 0px 15px #00ff00, 0px 0px 9px #56b000, 0px 0px 15px #006400, 0px 0px 5px #006400;
-            color: #FFFFFF;
-        }
-
-        @media only screen and (max-width: 500px) {
-            .main_logo_responsive {
-                max-width: 320px;
-            }
-        }
-        .loader_button {
-            background-color: #006400;
-            color: #fff;
-            font-family: Courier New, monospace;
-            text-shadow: 0 0 2px #fff, 0px 0px 14px #00ff00, 0px 0px 8px #56b000, 0px 0px 14px #006400, 0px 0px 4px #006400;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-        .loader_button:hover {
-            background-color: #008000;
-        }
-
-        span {
-            opacity: 0;
-            transition: all 0.6 ease;
-            display: inline-block;
-        }
-        span.enterX {
-            opacity: 1;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<div class="cover">
-    <div class="big_logo">
-        <img src="images/logo.png" alt="METACORTEX" class="main_logo_responsive">
-    </div>
-    <div class="_text">
-        Loading...
-    </div>
-</div>
+
+<main>
+    <section class="hero_section container">
+        <div class="cover">
+            <div class="big_logo">
+                <img src="images/logo.png" alt="METACORTEX" class="main_logo_responsive">
+            </div>
+            <div class="_text">
+                Loading...
+            </div>
+        </div>
+    </section>
+    <section class="project_section container">
+        <ul class="project_list">
+            <li class="project_item">
+                <img src="./images/time_tracker.png" alt="agent from matrix fight" width="480">
+                <div class="project_text-block">
+                    <h3 class="project_title">Time tracker</h3>
+                    <p class="project_text">A Time Tracker web app is a software tool designed to help individuals and teams
+                        track the
+                        time they spend on various tasks and projects.</p>
+                </div>
+            </li>
+            <li class="project_item">
+                <img src="./images/screenshot_capture.png" alt="neo stop the bullets matrix the film" width="480">
+                <div class="project_text-block">
+                    <h3 class="project_title">Screenshot Capture</h3>
+                    <p class="project_text">The Screenshot Capture app for control workers in IT and other companies is a
+                        software tool
+                        designed to help managers and team leaders monitor the productivity and work activities of their
+                        employees.</p>
+                </div>
+            </li>
+            <li class="project_item">
+                <img src="./images/repository_analyzer.png" alt="architector on the room matrix the film" width="480">
+                <div class="project_text-block">
+                    <h3 class="project_title">Repository Analyzer</h3>
+                    <p class="project_text">A Repository Analyzer is a software tool that analyzes code repositories,
+                        typically version
+                        control repositories like Git, SVN, or Mercurial, to provide insights and metrics about the
+                        codebase.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+<!--Footer-->
+<footer class="footer-section container">
+
+        <div class="footer-box">
+            <div class="address-logo">
+                <div class="footer-logo">
+                </div>
+                <address class="adress-section">
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-link" href="mailto: metacortex.ua@gmail.com"> metacortex.ua@gmail.com </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="tel:+380991111111"> +38 010 101 10 01 </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <h3 class="footer-social-title hidden-title">Social links:</h3>
+            <ul class="footer-social-list">
+                <li class="footer-social-item">
+                    <a class="footer-social-link" target="_blank" href="https://twitter.com/metacortexua">
+                        <svg class="footer-social-icon">
+                            <use href="images/symbol-defs.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="footer-social-link" target="_blank" href="https://www.facebook.com/metacortex.ua">
+                        <svg class="footer-social-icon">
+                            <use href="images/symbol-defs.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="footer-social-link" target="_blank" href="http://www.linkedin.com/in/metacortex">
+                        <svg class="footer-social-icon">
+                            <use href="images/symbol-defs.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-email-form">
+            <p class="footer-item-email">Follow the Rabbit</p>
+            <form class="footer-form">
+                <input class="footer-form-input" type="text" placeholder="E-mail" />
+                <button type="button" class="btn-send"> <span class="btn-send-text">Go</span>
+                    <svg class="send-icon" width="22" height="22">
+                        <use href="#">X</use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+</footer>
+
 <script src="js/loader.js"></script>
 </body>
 </html>
+
